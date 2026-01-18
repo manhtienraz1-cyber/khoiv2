@@ -1,30 +1,173 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Lớp 12C2 - Trang chủ</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Lớp 12C2 – Trang chủ</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+
+body{
+    background:linear-gradient(180deg,#eef6ff,#f8fbff);
+    color:#1f2937;
+}
+
+/* HERO */
+.hero{
+    height:55vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:
+        radial-gradient(circle at top,#93c5fd,transparent 60%),
+        linear-gradient(180deg,#dbeafe,#f8fbff);
+}
+.hero h1{
+    font-size:38px;
+    letter-spacing:3px;
+    color:#1e3a8a;
+}
+.hero p{
+    margin-top:10px;
+    font-size:16px;
+    color:#334155;
+}
+
+/* MENU CARD */
+.menu{
+    max-width:900px;
+    margin:-35px auto 60px;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:0 20px;
+}
+.menu a{
+    background:#ffffff;
+    padding:22px 10px;
+    border-radius:16px;
+    text-align:center;
+    text-decoration:none;
+    color:#1e3a8a;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.menu a:hover{
+    transform:translateY(-6px);
+    background:#eff6ff;
+}
+.menu span{
+    display:block;
+    font-size:26px;
+    margin-bottom:6px;
+}
+.menu strong{
+    font-size:15px;
+    font-weight:500;
+}
+
+/* CONTENT */
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:0 20px 80px;
+}
+.card{
+    background:#ffffff;
+    padding:40px;
+    border-radius:22px;
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+}
+.card h2{
+    color:#1e40af;
+    margin-bottom:16px;
+}
+.card p{
+    line-height:1.7;
+    font-size:16px;
+    color:#334155;
+}
+
+/* INFO */
+.info{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+    margin-top:50px;
+}
+.box{
+    background:#ffffff;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 12px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.box:hover{
+    transform:translateY(-6px);
+    background:#f0f7ff;
+}
+.box h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#e0efff;
+    color:#1e3a8a;
+    font-size:14px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>LỚP 12C2</h1>
-    <p>THPT Nguyễn Du | Năm học 2025–2026</p>
-</header>
+<section class="hero">
+    <div>
+        <h1>LỚP 12C2</h1>
+        <p>THPT Nguyễn Du · Năm học 2025–2026</p>
+    </div>
+</section>
 
-<nav>
-    <a href="index.html">Trang chủ</a>
-    <a href="members.html">Thành viên</a>
-    <a href="activities.html">Hoạt động</a>
-    <a href="achievements.html">Thành tích</a>
-</nav>
+<div class="menu">
+    <a href="#"><span>🏠</span><strong>Trang chủ</strong></a>
+    <a href="#"><span>👥</span><strong>Thành viên</strong></a>
+    <a href="#"><span>🎯</span><strong>Hoạt động</strong></a>
+    <a href="#"><span>🏆</span><strong>Thành tích</strong></a>
+</div>
 
 <div class="container">
+
     <div class="card">
-        <h2>Giới thiệu</h2>
-        <p>Lớp 12C2 là một tập thể đoàn kết, năng động, có tinh thần học tập nghiêm túc và tích cực tham gia các hoạt động của nhà trường.</p>
-        <p><b>Giáo viên chủ nhiệm:</b> Thầy Vũ Văn Hoành</p>
+        <h2>🌟 Giới thiệu lớp</h2>
+        <p>
+            Lớp 12C2 là một tập thể đoàn kết, chăm ngoan và có tinh thần học tập nghiêm túc.
+            Bên cạnh học tập, lớp luôn tích cực tham gia các hoạt động phong trào,
+            xây dựng môi trường học đường thân thiện và tích cực.
+        </p>
     </div>
+
+    <div class="info">
+        <div class="box">
+            <h3>👨‍🏫 Giáo viên chủ nhiệm</h3>
+            <p>Thầy Vũ Văn Hoành</p>
+        </div>
+        <div class="box">
+            <h3>👥 Sĩ số</h3>
+            <p>44 học sinh</p>
+        </div>
+        <div class="box">
+            <h3>🎯 Mục tiêu</h3>
+            <p>100% học sinh đỗ tốt nghiệp</p>
+        </div>
+    </div>
+
 </div>
 
 <footer>
